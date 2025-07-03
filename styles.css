@@ -11,26 +11,6 @@ body{
   padding: 10px;
 }
 
-.items {
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
-  transition: filter 0.3s, transform 0.3s;
-}
-
-.items.blur {
-  filter: blur(5px);
-  transform: scale(0.95);
-}
-
-.items.focus {
-  filter: none;
-  transform: scale(1.05);
-  z-index: 1;
-}
-
 .grid-container > .main-page {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -40,4 +20,23 @@ body{
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 30px;
+}
+
+.blurry-items {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.blurry-items.blur {
+  filter: blur(5px);
+  transform: scale(0.95);
+}
+
+.blurry-items.focus {
+  filter: none;
+  transform: scale(1.05);
 }

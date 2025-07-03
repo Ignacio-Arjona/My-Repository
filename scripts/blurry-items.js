@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('.items');
+const items = document.querySelectorAll('.blurry-items');
 
   items.forEach(item => {
     item.addEventListener('mouseenter', () => {
